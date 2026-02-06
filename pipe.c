@@ -6,6 +6,11 @@
 
 int main(int argc, char *argv[])
 {
-	// TODO: it's all yours
+	int fds[2];
+	pipe(fds);
+	for (int i = 0; i < 2; i++)
+	{
+		printf("fds[%d] = %d\n", i, fds[i]);
+	}
 	return 0;
 }
